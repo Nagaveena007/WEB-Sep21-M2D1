@@ -6,3 +6,11 @@
 //     5) Append the list items in the unordered list
 //     6) Append the unordered list in the document. The list should appear in the page.
 
+/*
+I was raised around many types of music, and I have heard many different songs. 
+I love the music that they make because it is real and alive. I look for all kinds of songs.
+I love ed shereen, justin beiber, rebecca black, annie marei songs and also I love the songs in my mother toung which is Kannada language
+melodious songs, Folk songs, etc
+
+I don't like the rap songs.
+*/
