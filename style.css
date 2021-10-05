@@ -1,0 +1,18 @@
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,6,45,0.9671218829328606) 35%, rgb(4, 66, 78) 100%);
+background-attachment: fixed;
+color: white;
+}
+.album-container{
+
+}
+.album-title{
+
+}
+.album-genre{
+
+}
+nav{
+background-color: (rgb(2,0,36), rgba(4, 66, 78) 100%);
+}
