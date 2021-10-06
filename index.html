@@ -26,7 +26,7 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Favicons -->
     <link
       rel="apple-touch-icon"
@@ -80,34 +80,48 @@
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#fav-albums">Favourite Albums </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#best-album-ever">Best Album Ever</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#wall-of-shame">wall of shame</a>
+              </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main role="main">
       <section class="jumbotron text-center">
         <div class="container">
-          <h1>Album example</h1>
+          <h1>Music Album</h1>
           <p class="lead text-muted">
             Something short and leading about the collection below—its contents,
             the creator, etc. Make it short and sweet, but not too short so
@@ -123,36 +137,19 @@
       <div class="album py-5 bg-light">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-lr-4 col-md-3 col-sm-2">
+            <div class="col-6 col-lg-3 col-md-4">
               <div class="card mb-3 shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
+                <img src="annie_marei.jpg" alt="" class="img-fluid" />
 
                 <div class="card-body">
-                  <p class="card-text">Rebbcca Black</p>
+                  <h4 class="card-text">Rebbcca Black</h4>
+                  <span class="album-genre">Rock</span>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Artist
+                      <button type="button" class="btn btn-success">
+                        Play
                       </button>
                     </div>
                     <small class="text-muted">41 mins</small>
@@ -160,39 +157,18 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lr-4 col-md-3 col-sm-2">
+            <div class="col-6 col-lg-3 col-md-4">
               <div class="card mb-3 shadow-sm">
-                  
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                  
-                >
-                  <title>Placeholder</title>
+                <img src="annie_marei.jpg" alt="" class="img-fluid" />
 
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em"> </text>
-                    
-                 
-                </svg>
-               
                 <div class="card-body">
                   <p class="card-text">Annie Marie</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Artist
+                      <button type="button" class="btn btn-success">
+                        Play
                       </button>
                     </div>
                     <small class="text-muted">34 mins</small>
@@ -200,563 +176,197 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lr-4 col-md-3 col-sm-2">
+            <div class="col-6 col-lg-3 col-md-4">
               <div class="card mb-3 shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
+                <img src="annie_marei.jpg" alt="" class="img-fluid" />
 
                 <div class="card-body">
-                  <p class="card-text">Justin Bieber</p>
+                  <p class="card-text">Annie Marie</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Artist
+                      <button type="button" class="btn btn-success">
+                        Play
                       </button>
                     </div>
-                    <small class="text-muted">53 mins</small>
+                    <small class="text-muted">34 mins</small>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lr-4 col-md-3 col-sm-2">
+            <div class="col-6 col-lg-3 col-md-4">
               <div class="card mb-3 shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
+                <img src="annie_marei.jpg" alt="" class="img-fluid" />
 
                 <div class="card-body">
-                  <p class="card-text">ed sheeran</p>
+                  <p class="card-text">Annie Marie</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Artist
-                      </button>
-                    </div>
-                    <small class="text-muted">53 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lr-4 col-md-3 col-sm-2">
-                <div class="card mb-4 shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-
-                <div class="card-body">
-                  <p class="card-text">
-                    Badshah
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
+                      <button type="button" class="btn btn-success">
                         Play
                       </button>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    <small class="text-muted">34 mins</small>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lr-4 col-md-3 col-sm-2">
-              <div class="card mb-4 shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
+            <div class="col-6 col-lg-3 col-md-4">
+              <div class="card mb-3 shadow-sm">
+                <img src="annie_marei.jpg" alt="" class="img-fluid" />
 
                 <div class="card-body">
-                  <p class="card-text">
-                   Neha Kakkar
-                  </p>
+                  <p class="card-text">Annie Marie</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
+                      <button type="button" class="btn btn-success">
                         Play
                       </button>
-                     
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    <small class="text-muted">34 mins</small>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lr-4 col-md-3 col-sm-2">
-                <div class="card mb-4 shadow-sm">
-                  <svg
-                    class="bd-placeholder-img card-img-top"
-                    width="100%"
-                    height="225"
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice"
-                    focusable="false"
-                  >
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c" />
-                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                      Thumbnail
-                    </text>
-                  </svg>
-  
-                  <div class="card-body">
-                    <p class="card-text">
-                     Yo Yo Honey Singh
-                    </p>
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <div class="btn-group">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          Play
-                        </button>
-                       
-                      </div>
-                      <small class="text-muted">9 mins</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <div class="col-12 col-lr-4 col-md-3 col-sm-2">
-                <div class="card mb-4 shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
+            <div class="col-6 col-lg-3 col-md-4">
+              <div class="card mb-3 shadow-sm">
+                <img src="annie_marei.jpg" alt="" class="img-fluid" />
 
                 <div class="card-body">
-                  <p class="card-text">
-                    Sonu Nigam
-                  </p>
+                  <p class="card-text">Annie Marie</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
+                      <button type="button" class="btn btn-success">
                         Play
                       </button>
-                      
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    <small class="text-muted">34 mins</small>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lr-4 col-md-3 col-sm-2">
-                <div class="card mb-4 shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
+            <div class="col-6 col-lg-3 col-md-4">
+              <div class="card mb-3 shadow-sm">
+                <img src="annie_marei.jpg" alt="" class="img-fluid" />
 
                 <div class="card-body">
-                  <p class="card-text">
-                    Sonu Nigam
-                  </p>
+                  <p class="card-text">Annie Marie</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
+                      <button type="button" class="btn btn-success">
                         Play
                       </button>
-                      
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    <small class="text-muted">34 mins</small>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lr-4 col-md-3 col-sm-2">
-                <div class="card mb-4 shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
+            <div class="col-6 col-lg-3 col-md-4">
+              <div class="card mb-3 shadow-sm">
+                <img src="annie_marei.jpg" alt="" class="img-fluid" />
 
                 <div class="card-body">
-                  <p class="card-text">
-                    Sonu Nigam
-                  </p>
+                  <p class="card-text">Annie Marie</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
+                      <button type="button" class="btn btn-success">
                         Play
                       </button>
-                      
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    <small class="text-muted">34 mins</small>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lr-4 col-md-3 col-sm-2">
-                <div class="card mb-4 shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-
-                <div class="card-body">
-                  <p class="card-text">
-                    Sonu Nigam
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Play
-                      </button>
-                      
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lr-4 col-md-3 col-sm-2">
-                <div class="card mb-4 shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-
-                <div class="card-body">
-                  <p class="card-text">
-                    Sonu Nigam
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Play
-                      </button>
-                      
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lr-4 col-md-3 col-sm-2">
-                <div class="card mb-4 shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-
-                <div class="card-body">
-                  <p class="card-text">
-                    Sonu Nigam
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Play
-                      </button>
-                      
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lr-4 col-md-3 col-sm-2">
-                <div class="card mb-4 shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-
-                <div class="card-body">
-                  <p class="card-text">
-                    Sonu Nigam
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Play
-                      </button>
-                      
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lr-4 col-md-3 col-sm-2">
-                <div class="card mb-4 shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-
-                <div class="card-body">
-                  <p class="card-text">
-                    Sonu Nigam
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Play
-                      </button>
-                      
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lr-4 col-md-3 col-sm-2">
-                <div class="card mb-4 shadow-sm">
-                <svg
-                  class="bd-placeholder-img card-img-top"
-                  width="100%"
-                  height="225"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Thumbnail"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" />
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
-
-                <div class="card-body">
-                  <p class="card-text">
-                    Sonu Nigam
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Play
-                      </button>
-                      
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
+          </div>
         </div>
       </div>
     </main>
+
+    <hr />
+    <section id="best-album-ever">
+      <div class="container-calss py-5">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <img src="gothan.jpg" class="img-fluid" />
+          </div>
+          <div class="col-12 col-md-8">
+            <div class="d-flex flex-column justify-content-center h-100">
+              <h4>Gotan project-La Revancha Del Tango</h4>
+              <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                iure! Delectus consequuntur labore enim facilis explicabo odit
+                excepturi magnam cum, esse itaque, in sapiente voluptas? Quas
+                magni consectetur quo architecto.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section id="wall-of-shame">
+<div class="container-class"></div>
+<div class="row">
+    <div class="col-12">
+<h1 class="text-center my-4">Wall of shame</h1>
+    </div>
+    <div class="col-6  col-md-4">
+        <div class="card mb-3 shadow-sm">
+          <img src="annie_marei.jpg" alt="" class="img-fluid" />
+
+          <h4 class="card-body">Trrible album #1</h4>
+            <span class="card-body">Trrible album because yes</span>
+            <div
+              class="d-flex justify-content-between align-items-center"
+            >
+        
+          </div>
+        </div>
+      </div>
+      <div class="col-6  col-md-4">
+        <div class="card mb-3 shadow-sm">
+          <img src="annie_marei.jpg" alt="" class="img-fluid" />
+
+          <h4 class="card-body">Trrible album #1</h4>
+            <span class="card-body">Trrible album because yes</span>
+            <div
+              class="d-flex justify-content-between align-items-center"
+            >
+        
+          </div>
+        </div>
+      </div>
+      <div class="col-6  col-md-4">
+        <div class="card mb-3 shadow-sm">
+          <img src="annie_marei.jpg" alt="" class="img-fluid" />
+
+          <h4 class="card-body">Trrible album #1</h4>
+            <span class="card-body">Trrible album because yes</span>
+            <div
+              class="d-flex justify-content-between align-items-center"
+            >
+        
+          </div>
+        </div>
+      </div>
+</div>
+</section>
+<section id="favourite-artist">
+
+</section>
 
     <footer class="text-muted">
       <div class="container">
