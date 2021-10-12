@@ -4,25 +4,82 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,6,45,0.967121882932
 background-attachment: fixed;
 color: white;
 }
-.album-container{
 
-}
-.album-title{
 
-}
-.album-genre{
-
-}
 nav{
 background-color: (rgb(2,0,36), rgba(4, 66, 78) 100%);
+height: 7vh;
 }
 .card-body{
 color:black
 }
-button{
-    color: white;
+section {
+    min-height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.album-img{
-min-height: 250px;
 
+/* EXERCISE 1
+For all Albums we'd like to have a consistent style.
+Create a class for:
+- The album container
+- The album cover
+- The album title
+- The album group / singer / dj
+- The album genre
+- The album duration
+- etc
+*/
+
+.album-container {
+    text-align: center;
+    padding-bottom: 1em;
+    margin: 1em;
+}
+
+.album-container img {
+    width: 100%;
+}
+
+.album-artist:after {
+    content: ' • '
+}
+
+.album-title {
+    margin-top: 0.50em;
+    margin-bottom: 0.25em;
+    font-size: 1.3em
+}
+
+.album-genre {
+
+}
+.carousel-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: lowercase;
+    color: #d1d1d1;
+    mix-blend-mode: color-burn;
+    font-weight: 900;
+}
+
+
+.album-tapestry {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.squared {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px auto;
+}
+.imgcard{
+    min-height: 200px;
+    min-width: 150px;
 }
